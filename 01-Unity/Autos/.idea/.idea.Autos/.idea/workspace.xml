@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72970cb6-552c-4466-b70e-584b5ff0b937" name="Changes" comment="" />
+    <list default="true" id="72970cb6-552c-4466-b70e-584b5ff0b937" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Autos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Autos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Colision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Colision.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +89,7 @@
       <workItem from="1731424338007" duration="4179000" />
       <workItem from="1731952971331" duration="2427000" />
       <workItem from="1733693065133" duration="3672000" />
+      <workItem from="1733762756538" duration="7762000" />
     </task>
     <servers />
   </component>
