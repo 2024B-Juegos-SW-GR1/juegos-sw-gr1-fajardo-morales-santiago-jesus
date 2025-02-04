@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -14,15 +15,35 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ImprimirInstrucciones();
+    }
+
+    void ImprimirInstrucciones()
+    {
+        Debug.Log("Bienvenido al juego");
+        Debug.Log("Muevete con las flechas");
+        Debug.Log("No te muevas dentro de los objetos");
+
+    }
+
+    void MoverAlJugador()
+    {
+        float movimientoX = Input.GetAxis("Horizontal") * Time.deltaTime * velocidad;
+        float movimientoY = 0f;
+        float movimientoZ = Input.GetAxis("Vertical") * Time.deltaTime * velocidad;
+        transform.Translate(movimientoX, movimientoY, movimientoZ);  
+    }
+
+    private int colisiones = 0;
+    void OnCollisionEnter()
+    {
+        colisiones++;
+        Debug.Log("He golpeado un objeto "+colisiones+" veces");
     }
 
     // Update is called once per frame
     void Update()
     {
-        float movimientoX = Input.GetAxis("Horizontal") * Time.deltaTime * velocidad;
-        float movimientoY = 0f;
-        float movimientoZ = Input.GetAxis("Vertical") * Time.deltaTime * velocidad;
-       transform.Translate(movimientoX, movimientoY, movimientoZ); 
+        MoverAlJugador();
     }
 }
